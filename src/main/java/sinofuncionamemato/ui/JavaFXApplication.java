@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import sinofuncionamemato.Main;
+import sinofuncionamemato.ui.restaurant.RestauranteController;
 
 
 public class JavaFXApplication extends Application  {
@@ -18,11 +19,13 @@ public class JavaFXApplication extends Application  {
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setControllerFactory(Main.getContext()::getBean);
-        root = fxmlLoader.load(Principal.class.getResourceAsStream("Principal.fxml"));
-        primaryStage.setScene(new Scene(root));
+        root = fxmlLoader.load(RestauranteController.class.getResourceAsStream("CrearRestaurante.fxml"));
+        Scene scene = new Scene(root);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("Crear Restaurante");
         primaryStage.show();
     }
 

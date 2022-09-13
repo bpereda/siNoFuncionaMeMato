@@ -9,7 +9,7 @@
     <children>
         <Button id="guardar" fx:id="guardar" layoutX="524.0" layoutY="361.0" mnemonicParsing="false" onAction="#guardarRestaurante" text="Guardar" />
         <Button id="cancelar" fx:id="cancelar" layoutX="451.0" layoutY="361.0" mnemonicParsing="false" text="Cancelar" />
-        <TextField id="nombre" fx:id="nombre" layoutX="78.0" layoutY="51.0" />
+        <TextField id="nombre" fx:id="nombre" layoutX="178.0" layoutY="59.0" />
         <TextField id="telefono" fx:id="telefono" layoutX="78.0" layoutY="86.0" />
         <TextField id="direccion" fx:id="direccion" layoutX="78.0" layoutY="118.0" />
         <Label layoutX="18.0" layoutY="55.0" text="Nombre" />
